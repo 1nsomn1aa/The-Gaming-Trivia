@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rowdies:wght@300;400;700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&family=Russo+One&display=swap');
 /* CSS Styles Reset*/
 * {
     padding: 0;
@@ -19,8 +19,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-items: center;
+    align-content: center;
     overflow: hidden;
     position: relative;
 }
@@ -33,7 +33,43 @@ body {
     position: relative;
 }
 
+#clock-container {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#clock {
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    align-self: center;
+    position: relative;
+    margin-top: -15px;
+    
+    z-index: 1;
+}
+
+#clock-text {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+    color: red;
+    z-index: 99;
+    margin-top: -39px;
+    position: relative;
+    font-size: x-large;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#clock-text p {
+    padding-left: 7px;
+}
+
 #tv {
+    margin-top: 40px;
     display: block;
     width: 100%;
     position: relative;
@@ -42,21 +78,9 @@ body {
 }
 
 #color-overlay {
-    display: none;
-    background-color: rgba(169, 169, 169, 0.459);
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    bottom: 10%;
-    text-align: center;
-    align-content: center;
-    color: whitesmoke;
-}
-
-#color-overlay2 {
     justify-content: center;
     width: 100%;
-    height: 40%;
+    height: 30%;
     position: absolute;
     bottom: 0;
 }
