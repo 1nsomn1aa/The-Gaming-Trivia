@@ -162,33 +162,120 @@ function show4() {
 document.addEventListener("DOMContentLoaded", function () {
 
     let answers = document.getElementsByTagName("div");
-
+    
     for (let i = 0; i < answers.length; i++) {
-        answers[i].addEventListener("click", function() {
+        answers[i].addEventListener("click", function () {
 
             if (this.getAttribute("data-type") === "correctAnswer") {
                 incrementCorrectScore();
+                Swal.fire({
+                    title: "Correct! ",
+                    text: "+1 To Gryffindor",
+                    icon: "success"
+                });
+                displayNextQuestion();
+                incrementQuestionNumber();
             } else if (this.getAttribute("data-type") === "answer") {
                 incrementWrongScore();
+                Swal.fire({
+                    title: "Oops :/",
+                    text: "+1 to Slytherin...",
+                    icon: "error"
+                });
+                displayNextQuestion();
+                incrementQuestionNumber();                
             } else {
-                
+            
             }
         });
     }
-
 });
+
+function endGame() {
+    let wall = document.getElementById("wall");
+    wall.style.display = "none";
+}
+
+
+
+
+
+
+
+// Increment correct score
 
 function incrementCorrectScore() {
 
-    let oldScore = parseInt(document.getElementById("correctScore").innerText);
-    document.getElementById("correctScore").innerText = oldScore + 1;
-
+    let oldCorrectScore = parseInt(document.getElementById("correctScore").innerText);
+    document.getElementById("correctScore").innerText = oldCorrectScore + 1;
 }
+
+// Increment incorrect score
 
 function incrementWrongScore() {
 
-    let oldScore = parseInt(document.getElementById("incorrectScore").innerText);
-    document.getElementById("incorrectScore").innerText = oldScore + 1;
+    let oldIncorrectScore = parseInt(document.getElementById("incorrectScore").innerText);
+    document.getElementById("incorrectScore").innerText = oldIncorrectScore + 1;
 
 }
 
+// Increment question number
+
+function incrementQuestionNumber() {
+    let questionNumber = document.getElementById("questionNumber");
+    var currentNumber = parseInt(questionNumber.innerHTML);
+    questionNumber.innerHTML = currentNumber + 1;
+}
+
+
+// Display next question / hide last question
+
+
+
+function displayNextQuestion() {
+
+    let showhide7 = document.getElementById("topic");
+    let showhide6 = document.getElementById("arcade-end");
+    let showhide5 = document.getElementById("arcade5");
+    let showhide4 = document.getElementById("arcade4");
+    let showhide3 = document.getElementById("arcade3");
+    let showhide2 = document.getElementById("arcade2");
+    let showhide1 = document.getElementById("arcade1");
+
+    if (showhide1.style.display === "") {
+        showhide1.style.display = "none";
+        showhide2.style.display = "flex";
+    } else if (showhide2.style.display === "flex") {
+
+        showhide3.style.display = "flex";
+        showhide2.style.display = "none";
+
+    } else if (showhide3.style.display === "flex") {
+
+        showhide4.style.display = "flex";
+        showhide3.style.display = "none";
+
+    } else if (showhide4.style.display === "flex") {
+        showhide5.style.display = "flex";
+        showhide4.style.display = "none";
+
+    } else if (showhide5.style.display === "flex") {
+
+        showhide7.style.display = "none";
+        showhide6.style.display = "flex";
+        showhide5.style.display = "none";
+        finalScore();
+
+    } else {
+        // No action needed if none of the elements are displayed.
+    }
+}
+
+
+let correctScore = document.getElementById("correctScore").innerText;
+let incorrectScore = document.getElementById("incorrectScore").innerText;
+
+function finalScore() {
+    let finalScoreElement = document.getElementById("final-score");
+    finalScoreElement.textContent = `Your score is ${correctScore} correct and ${incorrectScore} incorrect.`;
+}
