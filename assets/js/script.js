@@ -1,22 +1,27 @@
-type="application/javascript"
+type = "application/javascript"
 
 
 // Page Redirects
 function home() {
     window.location.href = "/index.html";
 }
+
 function topicStart() {
     window.location.href = "/topic.html";
 }
+
 function arcadeStart() {
     window.location.href = "/arcadegame.html";
 }
+
 function fpsStart() {
     window.location.href = "/fpsgame.html";
 }
+
 function simStart() {
     window.location.href = "/simgame.html";
 }
+
 function upcomingStart() {
     window.location.href = "/upcominggame.html";
 }
@@ -151,4 +156,39 @@ function show4() {
 }
 
 // Game
+
+// Check if answer is correct and increment score
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let answers = document.getElementsByTagName("div");
+
+    for (let i = 0; i < answers.length; i++) {
+        answers[i].addEventListener("click", function() {
+
+            if (this.getAttribute("data-type") === "correctAnswer") {
+                incrementCorrectScore();
+            } else if (this.getAttribute("data-type") === "answer") {
+                incrementWrongScore();
+            } else {
+                
+            }
+        });
+    }
+
+});
+
+function incrementCorrectScore() {
+
+    let oldScore = parseInt(document.getElementById("correctScore").innerText);
+    document.getElementById("correctScore").innerText = oldScore + 1;
+
+}
+
+function incrementWrongScore() {
+
+    let oldScore = parseInt(document.getElementById("incorrectScore").innerText);
+    document.getElementById("incorrectScore").innerText = oldScore + 1;
+
+}
 
