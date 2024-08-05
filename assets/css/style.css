@@ -248,3 +248,63 @@ i {
     }
 }
 
+/* Game Page CSS */
+
+#tv-bg {
+    display: flex;
+    width: 85vw;
+    height: 200px;
+    z-index: 99;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: rgb(87, 87, 87);
+    padding: 15px;
+}
+
+#question1, #question2, #question3, #question4, #question5 {
+    background-color: bisque;
+    font-size: larger;
+    border: 1px solid black;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#arcade2, #arcade3, #arcade4, #arcade5 {
+    display: none;
+}
+
+#answer-box {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+#answer11, #answer12, #answer13, #answer14,
+#answer21, #answer22, #answer23, #answer24,
+#answer31, #answer32, #answer33, #answer34,
+#answer41, #answer42, #answer43, #answer44,
+#answer51, #answer52, #answer53, #answer54{
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: all .2s ease-in-out;
+}
+
+#answer11:hover, #answer12:hover, #answer13:hover, #answer14:hover,
+#answer21:hover, #answer22:hover, #answer23:hover, #answer24:hover,
+#answer31:hover, #answer32:hover, #answer33:hover, #answer34:hover,
+#answer41:hover, #answer42:hover, #answer43:hover, #answer44:hover,
+#answer51:hover, #answer52:hover, #answer53:hover, #answer54:hover {
+    transform: scale(1.1); 
+}

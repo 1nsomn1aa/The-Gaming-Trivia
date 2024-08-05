@@ -1,5 +1,27 @@
 type="application/javascript"
 
+
+// Page Redirects
+function home() {
+    window.location.href = "/index.html";
+}
+function topicStart() {
+    window.location.href = "/topic.html";
+}
+function arcadeStart() {
+    window.location.href = "/arcadegame.html";
+}
+function fpsStart() {
+    window.location.href = "/fpsgame.html";
+}
+function simStart() {
+    window.location.href = "/simgame.html";
+}
+function upcomingStart() {
+    window.location.href = "/upcominggame.html";
+}
+
+// Topic Selection (Show/Hide)
 function show() {
 
     let showhide4 = document.getElementById("description4");
@@ -127,3 +149,6 @@ function show4() {
         showhide4.style.display = "none";
     }
 }
+
+// Game
+
