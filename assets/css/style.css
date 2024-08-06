@@ -162,7 +162,7 @@ body {
 #descriptionbox1 {
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(87, 87, 87);
     border: 1px solid black;
     border-radius: 45px 0 45px 45px;
     margin-top: 15px;
@@ -315,7 +315,6 @@ i {
 }
 
 #answer-box {
-
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -379,7 +378,7 @@ i {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    background-color: gray;
+    background-color: rgb(87, 87, 87);
     border: 1px solid black;
     border-radius: 25px;
     padding: 15px;
