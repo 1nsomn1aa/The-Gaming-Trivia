@@ -70,7 +70,7 @@ body {
 #topic {
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     -webkit-text-stroke: 1px palevioletred;
     text-shadow: rebeccapurple 0 0 20px;
     margin-top: 15px;
@@ -94,7 +94,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
        
-    width: 85vw;
+    width: 80vw;
     height: 200px;
     z-index: 99;
     margin-right: auto;
@@ -140,14 +140,13 @@ body {
 }
 
 #descriptionbox1 {
-    display: block;
+    
     justify-content: center;
     align-items: center;
     background-color: gray;
     border: 1px solid black;
     border-radius: 45px 0 45px 45px;
-    position: absolute;
-    bottom: 10%;
+    margin-top: 15px;
     padding: 15px;
     width: 70%;
 }
@@ -155,7 +154,7 @@ body {
 #description-text1, #description-text2, #description-text3, #description-text4 {
     background-color: lightgray;
     border-radius: 35px 0 35px 35px;
-    padding: 15px;
+    padding: 10px 10px;
     color: black;
     text-align: center;
     font-size: 14px;
@@ -257,7 +256,6 @@ i {
 #tv-bg {
     display: flex;
     width: 85vw;
-    height: 200px;
     z-index: 99;
     margin-right: auto;
     margin-left: auto;
@@ -283,17 +281,20 @@ i {
 
 #arcade1 {
     display: flex;
+    justify-content: center;
 }
 
 #arcade2, #arcade3, #arcade4, #arcade5 {
     display: none;
+    justify-content: center;
 }
 
 #answer-box {
+
     position: absolute;
     bottom: 0;
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #answer111, #answer112, #answer113, #answer114,
@@ -319,4 +320,57 @@ i {
 
 #arcade-end {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    max-width: 90%;
+}
+
+#arcade-end-bg{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+#game-end-text {
+    font-size: 1.2rem;
+}
+
+#final-score {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.exitbtn {
+    margin-top: 50px;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    animation: 2s ease-in-out 0s infinite normal both grow;
+    -webkit-text-stroke: 1px palevioletred;
+    text-shadow: rebeccapurple 0px 0px 20px;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }

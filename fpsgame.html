@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Trivia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div id="wall">
+        <img onclick="javascript:home()" id="neonsign" src="assets/images/neontext3.png" alt="">
+        <div id="clock-container">
+            <img id="clock" src="assets/images/clock.png" alt="">
+            <div id="clock-text">
+                <p><span id="correctScore">0</span></p>
+                <p><span id="incorrectScore">0</span></p>
+            </div>
+        </div>
+
+        <div id="topic">
+            <p>Question <span id="questionNumber">1</span></p>
+        </div>
+
+        <!-- Questions -->
+
+        <!-- Question 1 -->
+
+        <div id="arcade1" class="arcade">
+            <div id="tv-bg">
+                <div id="question1">Which first-person shooter game holds the title for the most viewed esports game
+                    worldwide, known for its massive player base and major tournament viewership?</div>
+            </div>
+
+            <div id="answer-box">
+                <div data-type="answer" id="answer111">A: Call of Duty: Modern Warfare II</div>
+                <div data-type="correctAnswer" id="answer112">B: Counter-Strike 2</div>
+                <div data-type="answer" id="answer113">C: Valorant</div>
+                <div data-type="answer" id="answer114">D: Overwatch 2</div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+
+        <div id="arcade2" class="arcade">
+            <div id="tv-bg">
+                <div id="question2">In which FPS game do players battle in a post-apocalyptic Washington, D.C., using an
+                    array of weapons and gadgets while navigating an open world?</div>
+            </div>
+
+            <div id="answer-box">
+                <div data-type="answer" id="answer121">A: Destiny 2</div>
+                <div data-type="answer" id="answer122">B: Metro Exodus</div>
+                <div data-type="answer" id="answer123">C: Fallout 4</div>
+                <div data-type="correctAnswer" id="answer124">D: The Division 2</div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+
+        <div id="arcade3" class="arcade">
+            <div id="tv-bg">
+                <div id="question3">Which game introduced the "Capture the Flag" mode that became a staple in many
+                    multiplayer FPS games?</div>
+            </div>
+
+            <div id="answer-box">
+                <div data-type="correctAnswer" id="answer131">A: Unreal Tournament</div>
+                <div data-type="answer" id="answer132">B: Team Fortress 2</div>
+                <div data-type="answer" id="answer133">C: Quake</div>
+                <div data-type="answer" id="answer134">D: Call Of Duty</div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+
+        <div id="arcade4" class="arcade">
+            <div id="tv-bg">
+                <div id="question4">In which FPS game does the player take on the role of Gordon Freeman, a scientist
+                    fighting an alien invasion?</div>
+            </div>
+
+            <div id="answer-box">
+                <div data-type="answer" id="answer141">A: DOOM</div>
+                <div data-type="answer" id="answer142">B: Quake</div>
+                <div data-type="answer" id="answer143">C: Far Cry</div>
+                <div data-type="correctAnswer" id="answer144">D: Half-Life</div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+
+        <div id="arcade5" class="arcade">
+            <div id="tv-bg">
+                <div id="question5">Which game is widely credited with popularizing the first-person shooter genre on
+                    consoles with its release in 2001?</div>
+            </div>
+
+            <div id="answer-box">
+                <div data-type="correctAnswer" id="answer151">A: Halo: Combat Evolved</div>
+                <div data-type="answer" id="answer152">B: GoldenEye 007</div>
+                <div data-type="answer" id="answer153">C: Call of Duty</div>
+                <div data-type="answer" id="answer154">D: DOOM</div>
+            </div>
+        </div>
+
+        <div id="arcade-end">
+            <div id="arcade-end-bg">
+                <div id="game-end-text">Game has ended!</div>
+                <div id="final-score"></div>
+                <input onclick="javascript:topicStart()" class="exitbtn" type="submit" value="Back to start!">
+            </div>
+        </div>
+
+        <!-- JavaScript Source Links -->
+        <script src="https://kit.fontawesome.com/041ada9d0b.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

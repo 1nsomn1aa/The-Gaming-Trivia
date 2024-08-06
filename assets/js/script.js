@@ -260,8 +260,7 @@ function displayNextQuestion() {
     }
 }
 
-
-
+// Display the achieved score
 
 function finalScore() {
 
