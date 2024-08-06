@@ -121,6 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 #topic1 {
@@ -159,13 +160,12 @@ body {
 }
 
 #description-text1, #description-text2, #description-text3, #description-text4 {
-    background-color: lightgray;
+    background-color: antiquewhite;
     border-radius: 35px 0 35px 35px;
-    padding: 10px 10px;
+    padding: 20px;
     color: black;
     text-align: center;
     font-size: 14px;
-    text-transform: uppercase;
 }
 
 .startbtn {

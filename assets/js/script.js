@@ -281,4 +281,5 @@ function finalScore() {
 
     let finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Thanks for playing ${username}. You answered ${finalCorrectScore} correctly and ${finalIncorrectScore} incorrectly.`;
+
 }
