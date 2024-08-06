@@ -7,6 +7,14 @@ function home() {
 }
 
 function topicStart() {
+    let username = document.getElementById("username").value;
+
+    sessionStorage.setItem("username", username);
+
+    window.location.href = "/topic.html";
+}
+
+function backToTopic() {
     window.location.href = "/topic.html";
 }
 
@@ -266,11 +274,11 @@ function finalScore() {
 
     let correctScore = document.getElementById("correctScore");
     let incorrectScore = document.getElementById("incorrectScore");
+    let username = sessionStorage.getItem("username");
 
     let finalCorrectScore = correctScore.textContent;
     let finalIncorrectScore = incorrectScore.textContent;
 
-
     let finalScoreElement = document.getElementById("final-score");
-    finalScoreElement.textContent = `Your score is ${finalCorrectScore} correct and ${finalIncorrectScore} incorrect.`;
+    finalScoreElement.textContent = `Thanks for playing ${username}. You answered ${finalCorrectScore} correctly and ${finalIncorrectScore} incorrectly.`;
 }

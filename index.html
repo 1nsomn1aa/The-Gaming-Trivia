@@ -13,13 +13,13 @@
         <img id="neonsign" src="assets/images/neontext3.png" alt="">
         <img id="tv" src="assets/images/tvnosignal.gif" alt="">
 
-            <form action="">
+            <form onsubmit="event.preventDefault(); topicStart()">
                 <label class="first-input-label" for="first-input">YOUR NAME HERE <i
                         class="fa-solid fa-arrow-turn-down"></i></label>
                 <input name="first-input" class="first-input" type="text" id="username" placeholder="" minlength="3"
                     maxlength="12" required>
                 <br>
-                <input onclick="javascript:topicStart()" class="second-input" type="submit" value="Start!">
+                <input class="second-input" type="submit" value="Start!">
             </form>
         </div>
     </div>
