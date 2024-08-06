@@ -50,21 +50,31 @@ body {
 
 #clock-text {
     display: flex;
-    text-align: center;
+    justify-content: center;
     color: red;
     z-index: 99;
     margin-top: -39px;
     position: relative;
     font-size: x-large;
     font-family: 'Orbitron', sans-serif;
+    gap: 25px;
 }
 
 #correctScore {
+    display: flex;
     color: green;
+    width: 20px;
+    justify-content: center;
+}
+
+#incorrectScore {
+    display: flex;
+    width: 20px;
+    justify-content: center;
 }
 
 #clock-text p {
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 #topic {
@@ -79,11 +89,8 @@ body {
 #tv {
     margin-top: 40px;
     display: block;
-    max-width: 100vw;
-    
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
+    width: 85%;
+
 }
 
 #tv-topic {
