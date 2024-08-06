@@ -191,17 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function endGame() {
-    let wall = document.getElementById("wall");
-    wall.style.display = "none";
-}
-
-
-
-
-
-
-
 // Increment correct score
 
 function incrementCorrectScore() {
@@ -272,10 +261,17 @@ function displayNextQuestion() {
 }
 
 
-let correctScore = document.getElementById("correctScore").innerText;
-let incorrectScore = document.getElementById("incorrectScore").innerText;
+
 
 function finalScore() {
+
+    let correctScore = document.getElementById("correctScore");
+    let incorrectScore = document.getElementById("incorrectScore");
+
+    let finalCorrectScore = correctScore.textContent;
+    let finalIncorrectScore = incorrectScore.textContent;
+
+
     let finalScoreElement = document.getElementById("final-score");
-    finalScoreElement.textContent = `Your score is ${correctScore} correct and ${incorrectScore} incorrect.`;
+    finalScoreElement.textContent = `Your score is ${finalCorrectScore} correct and ${finalIncorrectScore} incorrect.`;
 }
