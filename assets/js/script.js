@@ -1,6 +1,5 @@
 type = "application/javascript"
 
-
 // Page Redirects
 function home() {
     window.location.href = "/index.html";
@@ -193,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayNextQuestion();
                 incrementQuestionNumber();                
             } else {
-            
+                // No action needed.
             }
         });
     }
@@ -279,7 +278,7 @@ function finalScore() {
     let finalCorrectScore = correctScore.textContent;
     let finalIncorrectScore = incorrectScore.textContent;
 
-    let finalScoreElement = document.getElementById("final-score");
-    finalScoreElement.textContent = `Thanks for playing ${username}. You answered ${finalCorrectScore} correctly and ${finalIncorrectScore} incorrectly.`;
+    let finalScore = document.getElementById("final-score");
+    finalScore.textContent = `Thanks for playing ${username}. You answered ${finalCorrectScore} correctly and ${finalIncorrectScore} incorrectly.`;
 
 }
