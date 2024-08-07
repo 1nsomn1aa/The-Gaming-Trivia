@@ -52,7 +52,7 @@ function show4() {
         showhide2.style.display = "none";
         showhide.style.display = "none";
     } else {
-        showhide4.style.display === "none";
+        // Do nothing
     }
 }
 
@@ -69,7 +69,7 @@ function show3() {
         showhide2.style.display = "none";
         showhide.style.display = "none";
     } else {
-        showhide3.style.display = "none";
+        // Do nothing
     }
 }
 
@@ -86,7 +86,7 @@ function show2() {
         showhide2.style.display = "flex";
         showhide.style.display = "none";
     } else {
-        showhide2.style.display = "none";
+        // Do nothing
     }
 }
 
@@ -103,7 +103,7 @@ function show() {
         showhide2.style.display = "none";
         showhide.style.display = "flex";
     } else {
-        showhide.style.display = "none";
+        // Do nothing
     }
 }
 

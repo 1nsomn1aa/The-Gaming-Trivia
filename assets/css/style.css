@@ -159,7 +159,7 @@ body {
     
 }
 
-#descriptionbox1 {
+.descriptionbox1 {
     justify-content: center;
     align-items: center;
     background-color: rgb(87, 87, 87);
@@ -272,7 +272,7 @@ i {
 
 /* Game Page CSS */
 
-#tv-bg {
+.tv-bg {
     display: flex;
     width: 85vw;
     z-index: 99;
@@ -314,7 +314,7 @@ i {
     justify-content: center;
 }
 
-#answer-box {
+.answer-box {
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -448,11 +448,11 @@ i {
         font-size: larger;
     }
 
-    #tv-bg {
+    .tv-bg {
         width: 60%;
     }
 
-    #answer-box {
+    .answer-box {
         width: unset;
     }
 
@@ -475,11 +475,11 @@ i {
         margin-top: 20px;
     }
 
-    #descriptionbox1 {
+    .descriptionbox1 {
         margin-top: 70px;
     }
 
-    #answer-box {
+    .answer-box {
         width: 60%;
     }
 
@@ -501,11 +501,11 @@ i {
         width: 60%;
     }
 
-    #tv-bg {
+    .tv-bg {
         width: 50%;
     }
 
-    #answer-box {
+    .answer-box {
         width: 50%;
     }
 
@@ -526,11 +526,11 @@ i {
         width: 45%;
     }
 
-    #tv-bg {
+    .tv-bg {
         width: 40%;
     }
 
-    #answer-box {
+    .answer-box {
         width: 40%;
     }
 
@@ -568,11 +568,11 @@ i {
         font-size: xx-large;
     }
 
-    #descriptionbox1 {
+    .descriptionbox1 {
         font-size: large;
     }
 
-    #tv-bg {
+    .tv-bg {
         margin-top: 50px;
         width: 30%;
     }
