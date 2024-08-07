@@ -38,6 +38,7 @@ The idea for the design came largely from my previous experience playing the "Ja
 ![colorpalette](https://github.com/user-attachments/assets/6565129b-7a77-4ea1-89fe-c46de21c1b4c)
 
 *The cartoony wall background*
+
 ![bg33](https://github.com/user-attachments/assets/49c8f1ec-c275-4e6d-9389-7588524b600a)
 
 **Typography**
@@ -51,18 +52,23 @@ Initially the 'Rowdies' font was selected for the entire website, but later was 
 The landing page looks cartoony and displays the logo as a neon wall sign, a drawn TV that has a GIF on the screen which indicates that the game has not started yet and a cable leading to the wall outlet. At the bottom it has an input field with a suggestion above it to show players where to input their desired user name. Finally, a slowly growing and shrinking "Start!" button which attracts user attention and indicates where to press if the user wants to start the game.
 
 *Desktop Version*
+
 ![mainpagedesktop](https://github.com/user-attachments/assets/0ca902c0-f8be-424d-b6ff-9b8f73b719bb)
 
 *Mobile Version*
+
 ![mainpagemobile](https://github.com/user-attachments/assets/3e710be9-6c53-4749-853d-aee57749262e)
 
 *The Logo as a neon wall sign*
+
 ![mainpagelogo](https://github.com/user-attachments/assets/8c84abb0-8820-4549-9a80-48cade61436d)
 
 *TV that indicates that the game has not started yet*
+
 ![tvsignal](https://github.com/user-attachments/assets/f652ead6-e24f-407e-b8dd-0ee6fe5ab0e5)
 
 *Growing / Shrinking "Start!" button*
+
 ![bouncingstart](https://github.com/user-attachments/assets/4a3ca897-131b-419e-9411-a0cb6a5cc3ae)
 
 **Topic Selection**
@@ -70,12 +76,15 @@ The landing page looks cartoony and displays the logo as a neon wall sign, a dra
 After the user inputs their username and clicks on the start button, the topic selection page will appear allowing the user to select one of the four topics. By clicking on the topics, a short description of the selected topic will appear below. Lastly, when the user is satisfied with their choice, they can press the growing / shrinking start button at the bottom to start the game.
 
 *Desktop version*
+
 ![topicpagedesktop](https://github.com/user-attachments/assets/a556ea0b-6461-40d1-805b-6d1f569ba8dd)
 
 *Mobile Version*
+
 ![topicpagemobile](https://github.com/user-attachments/assets/ddd1d251-57e4-4bd8-9845-20773a6e7f0a)
 
 *Interaction*
+
 ![topicpagegif](https://github.com/user-attachments/assets/e8c9d85d-e3c8-4a11-a2dc-0ca6ebfd9d16)
 
 **The Game**
@@ -85,18 +94,23 @@ The game page has a similar layout to the topic page with the addition of the "s
 *NOTE: The alert was created by "sweetAlerts" and is credited at the bottom of this readme file in the credits secion.*
 
 *Desktop Version*
+
 ![gamepagedesktop](https://github.com/user-attachments/assets/60e79f6f-3ed8-44a0-a508-e225723c44f4)
 
 *Mobile Version*
+
 ![gamepagemobile](https://github.com/user-attachments/assets/7c9f6266-05fd-4a3d-b670-98d45f728e8b)
 
 *Correct Answer*
+
 ![correct](https://github.com/user-attachments/assets/dc3601e7-92a6-4ea3-a687-1f78798e8946)
 
 *Incorrect Answer*
+
 ![wrong](https://github.com/user-attachments/assets/e787f087-9f29-4514-9d50-e03970e5d540)
 
 *Interaction*
+
 ![gamepagegif](https://github.com/user-attachments/assets/268f7197-7073-49dd-a0e5-affc93a5a0f5)
 
 **Ending**
@@ -106,9 +120,11 @@ After the game has ended, the TV will display the users name, which they typed i
 The username is saved in the sesion storage and will be re-used if the user clicks on the button "BACK TO TOPICS" and plays again.
 
 *Desktop Version*
+
 ![endgamedesktop](https://github.com/user-attachments/assets/048c677d-8a28-4cee-b885-06bdb9f1afe4)
 
 *Mobile Version*
+
 ![endgamemobile](https://github.com/user-attachments/assets/a2c891be-89b7-4b7f-a32a-05e6857514fb)
 
 **404 Page**
@@ -118,18 +134,22 @@ Lastly, the 404 page was created in order to display to the user that they have 
 The user is presented with a button at the bottom "Click Here" which will take him back to the main page. Clicking on the neon sign also works on any of the pages to immediately be taken to the home page.
 
 *Desktop Version*
+
 ![404pagedesktop](https://github.com/user-attachments/assets/36a4eb2c-99a3-4aea-ae3d-e308a2beb57a)
 
 *Mobile Version*
+
 ![404pagemobile](https://github.com/user-attachments/assets/749d8a8a-e467-427c-a4d3-bad65ebad942)
 ## Validator Testing
 
 The code of the **deployed** website was checked for errors using the official W3C Markup Validation Service and JSHint:
 
 *Every HTML file was checked by W3C using Direct Input and URL. No errors or warnings were found.*
+
 ![htmlcheck](https://github.com/user-attachments/assets/fc1b7f45-01ce-4b96-bedb-5cee754308ed)
 
 *CSS was checked using Direct Input and URL methods. No errors or warnings were found.*
+
 ![csscheck](https://github.com/user-attachments/assets/33f37c2f-662f-4127-a74b-0f11c699d06d)
 
 *JavaScript was checked using JSHint and showed one warning, one undefined variable and 11 unused variables.*
@@ -137,6 +157,7 @@ The code of the **deployed** website was checked for errors using the official W
 - The single warning warns about the use of outer scoped variables.
 - Undefined variable is shown because of an external script called "Sweet Alert", which was used to change the appearance of the "alert" function in JavaScript.
 - 11 Unused variables are shown because they are used to redirect to a different page on click.
+
 ![jscheck](https://github.com/user-attachments/assets/d57e2a1e-731c-46f4-b9b5-4fd543e633bd)
 
 ## Testing
@@ -148,29 +169,37 @@ Here are the results:
 **Lighthouse Tests for Desktop**
 
 *Main Page*
+
 ![homedesktop](https://github.com/user-attachments/assets/df3abe99-e11e-4425-b8d2-a264aeee2a59)
 
 *Topic Page*
+
 ![topicdesktop](https://github.com/user-attachments/assets/4510e37c-00c2-4f18-b704-a6a7a9a8686e)
 
 *Game Page*
+
 ![arcadedesktop](https://github.com/user-attachments/assets/f21fa703-66a1-4308-b44d-caac3c3e2c5d)
 
 *404 Page*
+
 ![404desktop](https://github.com/user-attachments/assets/98e5d3ba-58e4-438d-bfdc-0e79c22ac054)
 
 **Lighthouse Tests for Mobile**
 
 *Main Page*
+
 ![homemobile](https://github.com/user-attachments/assets/e887115f-f66f-4e43-a2df-f137ff3c0aad)
 
 *Topic Page*
+
 ![topicmobile](https://github.com/user-attachments/assets/33593427-cca6-40bc-959f-b6710c589a9d)
 
 *Game Page*
+
 ![arcademobile](https://github.com/user-attachments/assets/aa175416-14d1-4c9c-be54-45611aaec99b)
 
 *404 Page*
+
 ![404mobile](https://github.com/user-attachments/assets/04a60cb7-4cad-4329-894a-178e74a9d991)
 
 
