@@ -2,34 +2,34 @@
 
 // Page Redirects
 function home() {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
 
 function topicStart() {
     
     let username = document.getElementById("username").value;
     sessionStorage.setItem("username", username);
-    window.location.href = "/topic.html";
+    window.location.href = "topic.html";
 }
 
 function backToTopic() {
-    window.location.href = "/topic.html";
+    window.location.href = "topic.html";
 }
 
 function arcadeStart() {
-    window.location.href = "/arcadegame.html";
+    window.location.href = "arcadegame.html";
 }
 
 function fpsStart() {
-    window.location.href = "/fpsgame.html";
+    window.location.href = "fpsgame.html";
 }
 
 function simStart() {
-    window.location.href = "/simgame.html";
+    window.location.href = "simgame.html";
 }
 
 function upcomingStart() {
-    window.location.href = "/upcominggame.html";
+    window.location.href = "upcominggame.html";
 }
 
 // Topic Selection (Show/Hide)
