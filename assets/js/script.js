@@ -109,6 +109,9 @@ function show() {
 
 // Check if answer is correct and increment score
 
+// This includes a script from sweetAlert.github.io (swal.fire)
+// to edit the appearance of the alert function
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let answers = document.getElementsByTagName("div");
